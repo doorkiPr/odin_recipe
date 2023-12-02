@@ -1,12 +1,94 @@
+body{
+    background-color: beige;
+    font-size: xx-large;
+}
 .title{
     text-align: center;
-    padding: 2rem;
-    border-bottom: 5px black solid;
+    border-bottom: black solid 3px;
 }
 .grid{
     display: flex;
     flex-wrap: wrap;
-    width: 800px;
-    height: 800px;
-    background-color: black;
+    justify-content: center;
+    max-width: 70%;
+    margin: auto;
+    margin-top: 50px;
+    gap: 15px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card:hover{
+    cursor:grab;
+    zoom: 115%;
+}
+.cardImg{
+    width: 200px;
+    height: 150px;
+}
+
+.cardTitle{
+    font-size: x-large;
+    font-weight: bolder;
+}
+a{
+    color: gray;
+    text-decoration: none;
+}
+
+.recipeImgContainer{
+    max-width: fit-content;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+.recipeImgContainer:hover{
+ zoom:170%;
+ cursor: grab;
+}
+
+.recipeImg{
+    max-height:30vh;
+}
+
+
+.ingredientRecipeContainer{
+   display: flex;
+   margin-right: auto;
+   gap: 10px;
+}
+
+.recipeTextContainer{
+    text-align: center;
+    border-radius: 3%;
+    border: 2px black solid;
+    background-color: antiquewhite;
+}
+
+
+.ingredientContainer{
+    background-color: rgb(127, 167, 69);
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    min-width: fit-content;
+    gap: 5px;
+    border: 2px solid black;
+    border-radius: 5%;
+}
+
+.ingredient{
+color: whitesmoke;
+font-weight: bolder;
+}
+
+@media (max-width: 767px) {
+
+    .ingredientRecipeContainer{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
